@@ -1,0 +1,128 @@
+﻿body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color:#000000;
+}
+
+.site-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight:bold;
+ }
+ ul{
+	   list-style: none;
+ }
+a:hover{
+  color: #81b3d2;
+}
+a:focus{
+  color: #dadada;
+}
+.Welcome-to-Sedona{
+	background-image: url("../img/intro.png");
+	width:1200px;
+	height:725px;
+	background-repeat: no-repeat;
+	background-color:#ace5ee;
+}
+.container .about-sedona,
+.interest{
+	text-align: center;
+}
+/*.container .about-sedona{
+	position:
+}
+*/
+.blue-box{
+	color:#ffffff;
+	background-color:#81b3d2;
+	text-align:center;
+}
+.features-title{
+	text-align:center;
+}
+.item-list{
+	background-color:#eeeeee;
+	text-align:center;
+}
+#arrival-date,
+#date-of-leaving{
+	font: inherit;
+	background-color:#f2f2f2;
+	border: none;
+}
+#arrival-date:hover,
+#date-of-leaving:hover{
+	background-color:#ebebeb;
+}
+#arrival-date:focus,
+#date-of-leaving:focus{
+	background-color:#ffffff;
+	border: 2px solid #e5e5e5;
+}
+#adults-number,
+#children-number{
+	font: inherit;
+	color:#81b3d2;
+	border: none;
+}
+#adults-number:hover,
+#children-number:hover{
+	color:#000000;
+}
+adults-number:active,
+#children-number:active{
+	color:#81b3d2;
+}
+.brown_button{
+	background-color:#766357;
+	color:#ffffff;
+	border: none;
+}
+.brown_button:hover{
+	background-color:#604e43;
+}
+.brown_button:active{
+	background-color:#503e33;
+	color:#928a85;
+}
+.blue_button{
+  font: inherit;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #81b3d2;
+  border: none;
+  }
+ .blue_button:hover{
+	  background-color: #669ec0;
+  }
+ .blue_button:active{
+	  background-color: #5496bd;
+	  color:#94b9d2;
+  }
+ .social-button {
+	background-color: #81b3d2;
+	 text-decoration:none;
+ }
+ .social-button:hover{
+	background-color: #669ec0;
+	 }
+.social-button:active{
+	background-color: #5496bd;
+	 }
+.rating{
+	background-color: #f2f2f2;
+}
