@@ -24,16 +24,18 @@
 		<main class="container">
 		<div class="welcome-to-sedona">
 			<div class="about-sedona">
-				<h1> Седона- небольшой городок в аризоне, заслуживающий большего! </h1>
+				<h1> Седона-небольшой городок в аризоне,<br> заслуживающий большего! </h1>
 				<p>Рассмотрим пять причин, по которым Седона круче, чем гранд Каньон!<p>
 			</div>
 		</div>
-		<div class="blue-box">
-		<h2>Настоящий городок</h2>
-		<p>-№1-</p>
-		<p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+		<div class="real-town">
+			<div class="blue-box">
+				<h2>Настоящий городок</h2>
+				<p>-№1-</p>
+				<p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+			</div>
+			<img class="visual-effect"  src="img/town.jpg" alt="Вид на город" height="258" width="800"/>
 		</div>
-		<img class="visual-effect"  src="img/town.jpg" alt="Вид на город" height="258" width="800"/>
 		<ul class="features">
 			<li class="features-title">
 				<img src="img/house.svg" alt="Домик">
@@ -51,14 +53,14 @@
 				<p>не только китайского, но и местного производства!</p>
 			</li>	
 		</ul>
-		<div class="blue-box">
-		<h2>Там есть мост дьявола</h2>
-		<p>-№2-</p>
-			<p>Да, по нему можно пройти, если конечно вы осмелитесь</p>
-		</div>
-			<figure>
+		<div class="devils-bridge">
 			<img class="visual-effect"  src="img/bridge.jpg" alt="Мост дьявола" height="258" width="800">
-			</figure>
+			<div class="blue-box">
+				<h2>Там есть мост дьявола</h2>
+				<p>-№2-</p>
+				<p>Да, по нему можно пройти, если конечно вы осмелитесь</p>
+			</div>
+		</div>
 		<ul class="features">
 			<li class="item-list">
 				<h2>Небольшая площадь</h2>
@@ -84,30 +86,31 @@
 		<section class="search">
 			<button class="brown-button">поиск гостиницы в Седоне</button>
 				<form class="hotel-search" method="post" action="https://echo.htmlacademy.ru">
-					<p>
-						<label for="arrival-date">Дата заезда</label>
-						<input id="arrival-date" class="date-input" type="text" name="arrival-date" placeholder="Дата заезда"/>
-					</p>
-					<p>
-						<label for="date-of-leaving">Дата выезда</label>
-						<input id="date-of-leaving" class="date-input" type="text" name="date-of-leaving" placeholder="Дата выезда"/>
-					</p>
-					<p>
-						<label for="adults-number">Взрослые</label>
-						<input id="adults-number" class="number-input" type="number" min="1" max="99" name="adults-number" placeholder="Взрослые"/>
-					</p>
-					<p>
-						<label for="children-number">Дети</label>
-						<input id="children-number" class="number-input" type="number" min="1" max="99" name="children-number" placeholder="Дети"/>
-					</p>
-					<p>
+					<div class="dates">
+						<p>
+							<label for="arrival-date">Дата заезда</label>
+							<input id="arrival-date" class="date-input" type="text" name="arrival-date" placeholder="Дата заезда"/>
+						</p>
+						<p>
+							<label for="date-of-leaving">Дата выезда</label>
+							<input id="date-of-leaving" class="date-input" type="text" name="date-of-leaving" placeholder="Дата выезда"/>
+						</p>
+					</div>
+					<div class="numbers">
+						<p>
+							<label for="adults-number">Взрослые</label>
+							<input id="adults-number" class="number-input" type="number" min="1" max="99" name="adults-number" placeholder="Взрослые"/>
+						</p>
+						<p>
+							<label for="children-number">Дети</label>
+							<input id="children-number" class="number-input" type="number" min="1" max="99" name="children-number" placeholder="Дети"/>
+						</p>
+					</div>	
 						<button class="blue-button" type="submit">Найти</button>
-					</p>
-						
 				</form>
 		</section>
 	</main>
-	<footer>
+	<footer class="main-footer">
 		<p>#visitsedona</p>
 		<div class="footer-social">
 			<ul>
