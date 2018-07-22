@@ -8,14 +8,19 @@
   text-transform: uppercase;
   background-color: #ffffff;
   width: 1200px;
+  margin: 0 auto;
 }
 
-h1 {
+.real-town {
   font-size: 20px;
 }
 
-ul {
+.site-navigation ul,
+.features,
+.social-buttons,
+.search-of-hotels {
   padding: 0;
+  list-style: none;
 }
 
 a {
@@ -29,12 +34,8 @@ a {
   font-weight: bold;
 }
 
-ul {
-  list-style: none;
-}
-
 a:hover {
-  color: #81b3d2;
+  color: #81b3d2
 }
 
 a:focus {
@@ -189,7 +190,7 @@ nav {
   justify-content: space-around;
 }
 
-.footer-social ul {
+.social-buttons {
   display: flex;
   justify-content: center;
 }
