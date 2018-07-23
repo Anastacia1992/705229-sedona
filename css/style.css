@@ -1,5 +1,5 @@
 ﻿body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "PT Sans Narrow", Arial, sans-serif;
   font-size: 14px;
@@ -8,14 +8,14 @@
   text-transform: uppercase;
   background-color: #ffffff;
   width: 1200px;
-  margin: 0 auto;
 }
 
 .real-town {
   font-size: 20px;
+  text-align: center;
 }
 
-.site-navigation ul,
+.site-navigation,
 .features,
 .social-buttons,
 .search-of-hotels {
@@ -28,12 +28,6 @@ a {
   color: #000000;
 }
 
-.site-navigation {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
-}
-
 a:hover {
   color: #81b3d2
 }
@@ -42,12 +36,30 @@ a:focus {
   color: #dadada;
 }
 
+.site-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+}
+
 .welcome-to-sedona {
   background-image: url("../img/intro.png");
   width: 1200px;
   height: 725px;
   background-repeat: no-repeat;
   background-color: #ace5ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.real-town {
+  display: flex;
 }
 
 .container .about-sedona,
@@ -56,24 +68,41 @@ a:focus {
 }
 
 .blue-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   color: #ffffff;
   background-color: #81b3d2;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
   text-align: center;
 }
 
 .features-title {
   text-align: center;
+  margin: 0;
+  padding-top: 60px;
+  padding-bottom: 76px;
 }
 
 .item-list {
   background-color: #eeeeee;
   text-align: center;
+  padding-top: 50px;
+  padding-bottom: 65px;
 }
 
 .date-input {
   font: inherit;
   background-color: #f2f2f2;
   border: none;
+  width: 346px;
+  height: 38px;
+  padding: 0;
 }
 
 .date-input:hover {
@@ -83,20 +112,6 @@ a:focus {
 .date-input:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
-}
-
-.number-input {
-  font: inherit;
-  color: #81b3d2;
-  border: none;
-}
-
-.number-input:hover {
-  color: #000000;
-}
-
-.number-input:active {
-  color: #81b3d2;
 }
 
 .brown-button {
@@ -134,8 +149,19 @@ a:focus {
 }
 
 .social-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 5px;
+  width: 45px;
+  height: 50px;
   background-color: #81b3d2;
   text-decoration: none;
+}
+
+.social-button:focus path {
+  fill: #94b9d2;
 }
 
 .social-button:hover {
@@ -150,32 +176,15 @@ a:focus {
   background-color: #f2f2f2;
 }
 
-nav {
+.navigation{
   display: flex;
   justify-content: space-around;
   width: 100%;
   height: 50px;
-}
-
-.site-navigation {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  height: 50px;
-}
-
-.welcome-to-sedona {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.real-town {
-  display: flex;
 }
 
 .features {
+  margin: 0;
   display: flex;
   width: 100%;
 }
@@ -188,17 +197,13 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .social-buttons {
   display: flex;
   justify-content: center;
-}
-
-.social-button {
-  padding: 10px;
-  display: flex;
-  margin: 5px;
+  align-items: center;
 }
 
 .search {
@@ -209,34 +214,243 @@ nav {
 
 .dates {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-direction: column;
 }
 
 .numbers {
   display: flex;
+  width: 458px;
+}
+
+.adults,
+.children {
+  display: flex;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.adults span,
+.children span {
+  color: #cacaca;
+}
+
+.adults:hover span,
+.children:hover span,
+.changing-amount:hover {
+  color: #000000;
+}
+
+.adults:active span,
+.children:active span,
+.changing-amount:active {
+  color: #81b3d2;
+}
+
+.adults input,
+.children input {
+  width: 25px;
+  background: none;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.number-input {
+  display: flex;
+  width: 50%;
   justify-content: space-around;
+  align-items: center;
+  background-color: #f2f2f2;
+  height: 38px;
+  padding: 0;
+  margin: 0;
 }
 
 .hotel-search {
   display: flex;
   flex-direction: column;
+  padding: 55px;
+  box-sizing: border-box;
 }
 
 .search-of-hotels {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 800px;
+  margin: 0;
 }
 
 .variants {
   display: flex;
-  width: 1200px;
-  justify-content: flex-start;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+  border-top: 1px solid #e5e5e5;
+}
+
+.variants:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-logo {
+  padding-right: 30px;
+}
+
+.quality {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
 .discription {
   display: flex;
   flex-direction: column;
+  height: 93px;
+  justify-content: space-between;
 }
 
-.quality {}
+.about-sedona {
+  display: flex;
+  flex-direction: column;
+}
+
+.academy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.academy:hover path {
+  fill: #81b3d2;
+}
+
+.academy:active path {
+  fill: #bdbbbc;
+}
+
+.academy a {
+  margin-left: 8px;
+}
+
+.visually-hidden:not(:focus):not(:active){
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.brown-button.big {
+  box-sizing: border-box;
+  width: 568px;
+  height: 86px;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.blue-button.big {
+  box-sizing: border-box;
+  width: 458px;
+  height: 58px;
+  text-transform: uppercase;
+  font-size: 21px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.dates:active path {
+  fill: #81b3d2;
+}
+
+.dates:hover path {
+  fill: #000000;
+}
+
+.form-row {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+.form-row svg {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.form-row path {
+  fill: #cacaca;
+}
+
+.form-row:hover path {
+  fill: #000000;
+}
+
+.form-row:active path {
+  fill: #81b3d2;
+}
+
+.results {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.variant {
+  display: flex;
+}
+
+.discription h2 {
+  margin: 0
+}
+
+.about,
+.booking {
+  padding: 2px 15px;
+  margin-right: 10px;
+}
+
+.buttons,
+.type-price {
+  display: flex;
+  align-items: baseline;
+}
+
+.type-price {
+  text-align: left;
+}
+
+.type-of-staying {
+  width: 130px;
+}
+
+.changing-amount {
+  font-size: 25px;
+  font-weight: bold;
+  color: #cacaca;
+  text-align: center;
+}
+
+.adults p,
+.children p {
+  width: 50%;
+}
+
+.children p {
+  text-align: center;
+}
